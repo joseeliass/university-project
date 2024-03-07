@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+h1 {
+  height: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  background-color: #073b4c;
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 300px;
+  height: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+.box:hover {
+  width: 350px;
+  height: 350px;
+}
+
+a,
+a::after {
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+@media all and (max-width: 800px) {
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+}

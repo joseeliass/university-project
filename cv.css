@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  scroll-behavior: smooth;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 1em;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+  background-color: #294d61;
+  color: aliceblue;
+  margin-bottom: 5px;
+}
+aside {
+  width: 15vw;
+  height: 100%;
+  background-color: #294d61;
+  position: relative;
+}
+.circle {
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+
+  border: 2px solid aliceblue;
+  margin: 1px;
+}
+.bcircle {
+  height: 11em;
+  width: 11em;
+  border-radius: 50%;
+  position: absolute;
+  top: -6.5em;
+  left: 0em;
+  border: 2px solid aliceblue;
+  padding: 5px;
+}
+aside {
+  color: aliceblue;
+  padding-bottom: 1em;
+}
+aside section h2 {
+  padding-top: 4em;
+  padding-bottom: 1em;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.asidesections ul li {
+  line-height: 2em;
+  list-style-type: none;
+  padding-left: 1em;
+}
+.asidesections a {
+  color: aliceblue;
+}
+.ten {
+  width: 12em;
+  height: 3px;
+  background-color: aliceblue;
+}
+.nine {
+  width: 10em;
+  height: 3px;
+  background-color: aliceblue;
+}
+.eight {
+  width: 8.5em;
+  height: 3px;
+  background-color: aliceblue;
+}
+.seven {
+  width: 7.5em;
+  height: 3px;
+  background-color: aliceblue;
+}
+.six {
+  width: 6em;
+  height: 3px;
+  background-color: aliceblue;
+}
+main {
+  display: flex;
+}
+section {
+  padding-top: 1em;
+}
+.profile {
+  padding-bottom: 3em;
+}
+.title {
+  height: 2em;
+
+  display: flex;
+  gap: 1em;
+  width: 65em;
+  background-color: #294d61;
+  color: aliceblue;
+  border-radius: 0 0 20px;
+}
+.title img {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.profile p {
+  padding-top: 1em;
+  padding-left: 5em;
+}
+.education {
+  display: flex;
+}
+.lefteducation {
+  text-align: center;
+}
+.lefteducation p {
+  background-color: #294d61;
+  width: 11em;
+  height: 2.5em;
+  margin-left: 3em;
+  margin-top: 1em;
+  border-radius: 0 20px 20px 0;
+  color: aliceblue;
+}
+.profile dl {
+  padding-left: 5em;
+  line-height: 2em;
+}
+.profile dd {
+  padding-left: 2em;
+}
+
+.pwidth,
+.midlist li {
+  width: 60em;
+}
+.midlist {
+  padding-left: 5em;
+}

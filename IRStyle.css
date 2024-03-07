@@ -1,0 +1,320 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+/*HERO*/
+#lang {
+  margin-bottom: 1em;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  border: 30px solid black;
+  border-radius: 30px;
+  background-color: black;
+  width: max-content;
+}
+#langName {
+  font-size: 0.7em;
+}
+
+.btn-class-name {
+  --primary: 255, 90, 120;
+  --secondary: 150, 50, 60;
+  width: 40px;
+  height: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
+  outline: 10px solid rgb(var(--primary), 0.5);
+  border-radius: 100%;
+  position: relative;
+  transition: 0.3s;
+}
+
+.btn-class-name .back {
+  background: rgb(var(--secondary));
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-class-name .front {
+  background: linear-gradient(
+    0deg,
+    rgba(var(--primary), 0.6) 20%,
+    rgba(var(--primary)) 50%
+  );
+  box-shadow: 0 0.5em 1em -0.2em rgba(var(--secondary), 0.5);
+  border-radius: 100%;
+  position: absolute;
+  border: 1px solid rgb(var(--secondary));
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: inherit;
+  transform: translateY(-15%);
+  transition: 0.15s;
+  color: rgb(var(--secondary));
+}
+
+.btn-class-name:active .front {
+  transform: translateY(0%);
+  box-shadow: 0 0;
+}
+
+#heroIR {
+  text-align: center;
+  top: 0px;
+  bottom: 0px;
+  background: rgb(1, 117, 146);
+  background: linear-gradient(
+    90deg,
+    rgba(1, 117, 146, 1) 11%,
+    rgba(0, 0, 0, 1) 91%
+  );
+  background-size: cover;
+  background-position: center center;
+  height: 60vh;
+}
+
+#heroText {
+  color: white;
+  font-size: 2.5em;
+  padding-top: 2em;
+}
+
+/*SECTIONS*/
+#ContentContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ContentImg {
+  height: 100%;
+  width: 50%;
+  object-fit: cover;
+}
+
+.ContentWrite {
+  padding: 0 2.5% 0 2.5%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ContentReference {
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 3em;
+  border-radius: 2em;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+  padding: 15px 25px;
+  color: #212121;
+  border: unset;
+  z-index: 1;
+}
+
+.ContentReference::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
+
+.ContentReference:hover {
+  color: #e8e8e8;
+}
+
+.ContentReference:hover::before {
+  width: 100%;
+}
+
+#ContentOne {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#ContentTwo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.ContentTitle {
+  font-size: 2em;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.ContentText {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+/*QUOTE SECTION*/
+#Quote {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  padding-top: 120px;
+  padding-left: 2em;
+  padding-right: 2em;
+  flex-direction: column;
+  padding-bottom: 120px;
+  background-color: #e8e8e8;
+}
+
+#QuoteContent {
+  gap: 2px;
+  width: 100%;
+  display: flex;
+  z-index: 100;
+  max-width: 1000px;
+  align-items: center;
+  flex-direction: column;
+}
+
+#WriterContainer {
+  padding-top: 5%;
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+#WriterDetails {
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+#WriterImage {
+  display: block;
+  width: 60px;
+  object-fit: cover;
+  aspect-ratio: 1;
+  border-radius: 1em;
+}
+
+#QuoteText {
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+/*Vid*/
+#Vid {
+  height: 40em;
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-top: 100px;
+  padding-left: 1em;
+  padding-right: 1em;
+  flex-direction: column;
+  background-color: #017592;
+}
+
+#VidTitle {
+  height: 35em;
+  gap: 3em;
+  width: 100%;
+  display: flex;
+  z-index: 100;
+  max-width: 900px;
+  align-items: center;
+  flex-direction: column;
+}
+
+#TitleDesc {
+  font-size: 40px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+#VideoPlay,
+#VideoPlay iframe {
+  width: 100%;
+  height: 100%;
+  transition: ease 0.5s;
+}
+
+#VideoPlay iframe:hover {
+  cursor: pointer;
+  box-shadow: 20px 20px;
+  background-color: black;
+}
+
+/*MEDIA QUERIES*/
+@media all and (max-width: 767px) {
+  #heroText {
+    padding: 25px;
+    padding-top: 50px;
+    font-size: 30px;
+    text-align: center;
+  }
+  #ContentContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  #ContentOne,
+  #ContentTwo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ContentImg {
+    display: none;
+  }
+}
+
+@media screen and ((min-width: 768px) and (max-width: 1511px)) {
+  #heroIR {
+    height: 70vh;
+  }
+  #heroText {
+    padding: 25px;
+    padding-bottom: 100px;
+  }
+}

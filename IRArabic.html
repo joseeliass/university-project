@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <link rel="stylesheet" href="IRStyle.css" />
+    <link rel="icon" href="img/Hero.jpg" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Internet Reasearch</title>
+  </head>
+  <body>
+    <header id="heroIR">
+      <div id="heroText">
+        <div id="lang">
+          <label for="lang" id="langName" style="text-shadow: 0em 0em 10px red"
+            >Arabic</label
+          >
+          <button class="btn-class-name">
+            <span class="back"></span>
+            <span class="front"></span>
+          </button>
+        </div>
+
+        <h1>الانترنت<br /><br /></h1>
+        <p>البنية التحتية للإنترنت وتاريخها</p>
+      </div>
+    </header>
+
+    <div id="ContentContainer">
+      <div id="ContentOne">
+        <div class="ContentWrite">
+          <h2 class="ContentTitle">البنية التحتية للإنترنت</h2>
+
+          <ul class="ContentText">
+            <li>
+              البنية التحتية للشبكة هي المجموعة الأوسع من المكونات الأساسية التي
+              تعمل بشكل متماسك لتشغيل شبكة تكنولوجيا المعلومات وهي جزء مهم من
+              البنية التحتية لتكنولوجيا المعلومات في المؤسسة.
+            </li>
+            <li>
+              نظرًا لأن المؤسسة تعتمد على شبكة تكنولوجيا المعلومات الخاصة بها
+              لتشغيل التطبيقات ذات المهام الحرجة والعمليات التجارية، فإن ضمان أن
+              تكون البنية التحتية للشبكة الأساسية موثوقة وآمنة وقوية وقابلة
+              للتطوير أمر بالغ الأهمية.
+            </li>
+          </ul>
+          <a
+            class="ContentReference"
+            href="https://www.solarwinds.com/resources/it-glossary/network-infrastructure#"
+            >للمزيد</a
+          >
+        </div>
+
+        <img
+          class="ContentImg"
+          src="img/Infrastructure.JPG"
+          alt="InternetInfrastructure"
+        />
+      </div>
+
+      <div id="ContentTwo">
+        <div class="ContentWrite">
+          <h2 class="ContentTitle">تاريخ الإنترنت</h2>
+
+          <ul class="ContentText">
+            <li>
+              Tتعود أصول الإنترنت إلى الولايات المتحدة الأمريكية في الخمسينيات
+              من القرن العشرين. كانت الحرب الباردة في ذروتها وكانت هناك توترات
+              هائلة بين أمريكا الشمالية والاتحاد السوفيتي. وكانت كلتا القوتين
+              العظميين تمتلكان أسلحة نووية فتاكة، وكان الناس يعيشون في خوف من
+              هجمات مفاجئة بعيدة المدى. أدركت الولايات المتحدة أنها بحاجة إلى
+              نظام اتصالات لا يمكن أن يتأثر بهجوم نووي سوفيتي.
+            </li>
+            <li>
+              في ذلك الوقت، كانت أجهزة الكمبيوتر عبارة عن آلات كبيرة ومكلفة
+              يستخدمها العلماء العسكريون وموظفو الجامعات حصريًا.
+            </li>
+          </ul>
+          <a
+            class="ContentReference"
+            href="https://www.scienceandmediamuseum.org.uk/objects-and-stories/short-history-internet"
+            >للمزيد</a
+          >
+        </div>
+
+        <img class="ContentImg" src="img/HISTORY.png" alt="InternetHistory" />
+      </div>
+    </div>
+
+    <section id="Quote">
+      <div id="QuoteContent">
+        <div id="QuoteText">
+          <h2>
+            <i>"أصبحت شبكة الإنترنت بمثابة ساحة المدينة لقرية الغد العالمية"</i>
+          </h2>
+        </div>
+
+        <div id="WriterContainer">
+          <img id="WriterImage" src="img/BillGates.JPG" alt="Bill Gates" />
+
+          <div id="WriterDetails">
+            <div id="WriterName"><p>- بيل جيتس</p></div>
+            <div id="WriterJob">
+              <p><i> (المؤسس المشارك لشركة مايكروسوفت)</i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Vid">
+      <div id="VidTitle">
+        <h2 id="TitleDesc">فيديو عام عن الإنترنت</h2>
+
+        <div id="VideoPlay">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Dxcc6ycZ73M?si=aNBrDUyCsAl0r0Wp"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script>
+    document
+      .querySelector(".btn-class-name")
+      .addEventListener("click", function () {
+        window.location.href = "IR.html";
+      });
+  </script>
+</html>

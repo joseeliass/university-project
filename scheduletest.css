@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+table,
+tr,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 1000px;
+}
+.box {
+  position: relative;
+}
+.fourtyFive,
+.fourtyFiveTheory {
+  position: absolute;
+  width: 100%;
+  background-color: rgb(98, 158, 98);
+  top: 0;
+  left: 0;
+  height: 9em;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.fifteen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(165, 198, 143);
+  height: 9em;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.iss {
+  position: absolute;
+  width: 100%;
+  background-color: rgb(92, 173, 146);
+  top: 0em;
+  left: 0;
+  height: 9.5em;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.ds {
+  position: absolute;
+  top: 2.4em;
+  left: 0;
+  width: 100%;
+  background-color: rgb(194, 194, 13);
+  height: 10em;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.fifty {
+  position: absolute;
+  width: 100%;
+  background-color: rgb(140, 102, 176);
+  top: 0;
+  left: 0;
+  height: 5.5em;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.fourtyFiveTheory {
+  background-color: rgb(189, 114, 114);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+}
+.text-schedule {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+@media all and (max-width: 1300px) {
+  table,
+  tr,
+  th,
+  td {
+    padding: 0 1em 1em 0;
+  }
+  .fifteen,
+  .fourtyFive,
+  .ds,
+  .iss,
+  .fourtyFiveTheory {
+    height: 6em;
+  }
+  @media all and (max-width: 1000px) {
+    * {
+      font-size: 12px;
+    }
+    table {
+      width: 600px;
+    }
+  }
+}

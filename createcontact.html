@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="createcontacte.css" />
+    <link rel="icon" href="img/Hero.jpg" />
+    <link rel="stylesheet" href="footertest.css" />
+  </head>
+  <body>
+    <div class="welcome">
+      <form id="contactForm">
+        <h1>Welcome!</h1>
+        <label for="firstname">First name:</label>
+        <input type="text" id="firstname" name="firstname" />
+
+        <label for="lastname">last name:</label>
+        <input type="text" id="lastname" name="lastname" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" />
+
+        <label for="retypepassword">Retype password:</label>
+        <input type="password" id="retypepassword" name="retypepassword" />
+
+        <button type="button" onclick="submitForm()">Submit</button>
+        <button type="reset" onclick="Reset()">Reset</button>
+
+        <div id="content">
+          <p></p>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <div class="topf">
+        <div class="fbox">
+          <h4>More Informations</h4>
+          <ul>
+            <li>USEK</li>
+            <li>KASLIK</li>
+            <li>+961 <a href="tel:09600000">09600000</a></li>
+            <li>
+              <a
+                href="mailto:Registrar@usek.edu.lb
+                "
+                >Registrar@usek.edu.lb
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="fbox">
+          <h4>JOSE ELIAS</h4>
+          <ul>
+            <li>Male</li>
+            <li>19</li>
+            <li>202300172</li>
+            <li>USEK</li>
+          </ul>
+        </div>
+        <div class="fbox">
+          <h4>CHARBEL MOUSALLEM</h4>
+          <ul>
+            <li>Male</li>
+            <li>19</li>
+            <li>202300740</li>
+            <li>USEK</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottomf">
+        <p>Copyright from Google</p>
+        <ul>
+          <li>
+            <img
+              src="img/twittericon.png"
+              alt="twittericon"
+              width="30"
+              height="30"
+            />
+          </li>
+          <li>
+            <img
+              src="img/fbiconinwhite.jpg"
+              alt="fbicon"
+              widht="30"
+              height="30"
+            />
+          </li>
+          <li>
+            <img
+              src="img/linkediniconwhite.jpg"
+              alt="linkediniconwhite"
+              widht="30"
+              height="30"
+            />
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="createcontact.js"></script>
+  </body>
+</html>

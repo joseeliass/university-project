@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us Form</title>
+    <link rel="stylesheet" href="contacts.css" />
+    <link rel="icon" href="img/Hero.jpg" />
+    <link rel="stylesheet" href="footertest.css" />
+  </head>
+  <body>
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="cname" name="cname" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="password">password:</label>
+        <input type="password" id="password" name="password" />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+        <button type="button" onclick="sForm()">Submit</button>
+        <button type="button" onclick="Reset()">Reset</button>
+      </form>
+
+      <div id="errorMessage" class="error-message"></div>
+    </div>
+    <footer>
+      <div class="topf">
+        <div class="fbox">
+          <h4>More Informations</h4>
+          <ul>
+            <li>USEK</li>
+            <li>KASLIK</li>
+            <li>+961 <a href="tel:09600000">09600000</a></li>
+            <li>
+              <a
+                href="mailto:Registrar@usek.edu.lb
+                "
+                >Registrar@usek.edu.lb
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="fbox">
+          <h4>JOSE ELIAS</h4>
+          <ul>
+            <li>Male</li>
+            <li>19</li>
+            <li>202300172</li>
+            <li>USEK</li>
+          </ul>
+        </div>
+        <div class="fbox">
+          <h4>CHARBEL MOUSALLEM</h4>
+          <ul>
+            <li>Male</li>
+            <li>19</li>
+            <li>202300740</li>
+            <li>USEK</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottomf">
+        <p>Copyright from Google</p>
+        <ul>
+          <li>
+            <img
+              src="img/twittericon.png"
+              alt="twittericon"
+              width="30"
+              height="30"
+            />
+          </li>
+          <li>
+            <img
+              src="img/fbiconinwhite.jpg"
+              alt="fbicon"
+              widht="30"
+              height="30"
+            />
+          </li>
+          <li>
+            <img
+              src="img/linkediniconwhite.jpg"
+              alt="linkediniconwhite"
+              widht="30"
+              height="30"
+            />
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="contacts.js"></script>
+  </body>
+</html>

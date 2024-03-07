@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FINAL PROJECT</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link rel="stylesheet" href="homestyle.css" />
+    <link rel="stylesheet" href="footertest.css" />
+    <link rel="icon" href="img/Hero.jpg" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div id="logo">PROJECT</div>
+        <input id="checkbox" type="checkbox" onclick="hideSidebar()" />
+        <label class="toggle" for="checkbox">
+          <span id="bar1" class="bars"></span>
+          <span id="bar2" class="bars"></span>
+          <span id="bar3" class="bars"></span>
+        </label>
+        <ul class="menu">
+          <li><a href="home.html">HOME</a></li>
+
+          <li><a href="scheduletest.html">SCHEDULE</a></li>
+          <li><a href="Quiz.html">QUIZ</a></li>
+          <li><a href="multymedia.html">MULTIMEDIA</a></li>
+          <li><a href="createcontact.html">CONTACT</a></li>
+          <li><a href="IR.html">RESEARCH</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="main-content">
+      <div class="Hero"><h1>WELCOME TO OUR WEBSITE</h1></div>
+
+      <p class="AfterHero">
+        <strong style="color: #073b4c; font-size: larger"
+          >I extend a warm greeting to all my visitors!</strong
+        ><br />
+        <br />Whether you're here to peruse my <strong>CV</strong>, check out my
+        <strong>SCHEDULE</strong>, explore some <strong>TEXT</strong>, or delve
+        into the depths of <strong>INTERNET RESEARCH</strong>,<i
+          style="color: #073b4c"
+        >
+          I appreciate your presence.</i
+        >
+        <br />
+        Feel free to immerse yourself in the content, and if you have any
+        questions or need assistance, don't hesitate to reach out. Welcome, and
+        enjoy your stay!
+      </p>
+
+      <div class="content-container">
+        <br /><br />
+
+        <div class="item" id="CV">
+          <div class="ItemTitle"><strong>CV</strong></div>
+          <p class="textcontent">
+            Discover my professional journey, skills, and experiences. From my
+            educational background to my work history, this section provides an
+            in-depth look at my qualifications and expertise.
+          </p>
+        </div>
+        <br /><br />
+
+        <div class="item" id="Schedule">
+          <div class="ItemTitle"><strong>Schedule</strong></div>
+          <p class="textcontent">
+            Stay updated with my daily activities, events, and availability.
+            Whether you're looking to connect for business opportunities or
+            simply curious about my agenda, you'll find it all here.
+          </p>
+        </div>
+        <br /><br />
+
+        <div class="item" id="Quiz">
+          <div class="ItemTitle"><strong>Quiz</strong></div>
+          <p class="textcontent">
+            Get ready for a thrilling mental workout. Test your knowledge in Web
+            Development, have fun, and embark on a journey of discovery. Best of
+            luck!
+          </p>
+        </div>
+        <br /><br />
+        <div class="item" id="MultiMedia">
+          <div class="ItemTitle"><strong>Media</strong></div>
+          <p class="textcontent">
+            Explore and enjoy a fusion of images, videos, and interactive
+            content. Immerse yourself in a captivating journey of multimedia
+            delights.
+          </p>
+        </div>
+        <br /><br />
+        <div class="item" id="Contact">
+          <div class="ItemTitle"><strong>Contact</strong></div>
+          <p class="textcontent">
+            We're delighted to connect with you. Whether you have questions,
+            feedback, or just want to say hello, we're here for you. Feel free
+            to reach out and let's start a conversation!
+          </p>
+        </div>
+        <br /><br />
+
+        <div class="item" id="Research">
+          <div class="ItemTitle"><strong>Research</strong></div>
+          <p class="textcontent">
+            Delve into the origins, evolution, and profound impact on society of
+            Internet Research. Explore topics ranging from the birth of the
+            World Wide Web to the latest trends shaping our digital future. You
+            can enjoy reading them in 2 different languages, Arabic and English.
+          </p>
+        </div>
+      </div>
+      <script>
+        function hideSidebar() {
+          const main = document.getElementById("main-content");
+          const checkbox = document.getElementById("checkbox");
+
+          if (checkbox.checked) {
+            main.classList.add("sidebar-open");
+          } else {
+            main.classList.remove("sidebar-open");
+          }
+        }
+      </script>
+      <footer>
+        <div class="topf">
+          <div class="fbox">
+            <h4>More Informations</h4>
+            <ul>
+              <li>USEK</li>
+              <li>KASLIK</li>
+              <li>+961 <a href="tel:09600000">09600000</a></li>
+              <li>
+                <a
+                  href="mailto:Registrar@usek.edu.lb
+                "
+                  >Registrar@usek.edu.lb
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="fbox">
+            <h4>JOSE ELIAS</h4>
+            <ul>
+              <li>Male</li>
+              <li>19</li>
+              <li>202300172</li>
+              <li>USEK</li>
+            </ul>
+          </div>
+          <div class="fbox">
+            <h4>CHARBEL MOUSALLEM</h4>
+            <ul>
+              <li>Male</li>
+              <li>19</li>
+              <li>202300740</li>
+              <li>USEK</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottomf">
+          <p>Copyright from Google</p>
+          <ul>
+            <li>
+              <img
+                src="img/twittericon.png"
+                alt="twittericon"
+                width="30"
+                height="30"
+              />
+            </li>
+            <li>
+              <img
+                src="img/fbiconinwhite.jpg"
+                alt="fbicon"
+                width="30"
+                height="30"
+              />
+            </li>
+            <li>
+              <img
+                src="img/linkediniconwhite.jpg"
+                alt="linkediniconwhite"
+                width="30"
+                height="30"
+              />
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

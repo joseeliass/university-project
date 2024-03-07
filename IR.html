@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="IRStyle.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/Hero.jpg" />
+    <title>Internet Reasearch</title>
+  </head>
+  <body>
+    <header id="heroIR">
+      <div id="heroText">
+        <div id="lang">
+          <label for="lang" id="langName" style="text-shadow: 0em 0em 10px red"
+            >English</label
+          >
+          <button class="btn-class-name">
+            <span class="back"></span>
+            <span class="front"></span>
+          </button>
+        </div>
+
+        <h1>INTERNET RESEARCH<br /><br /></h1>
+        <p>Internet Infrastructure and History</p>
+      </div>
+    </header>
+
+    <div id="ContentContainer">
+      <div id="ContentOne">
+        <div class="ContentWrite">
+          <h2 class="ContentTitle">Internet Infrastructure</h2>
+
+          <ul class="ContentText">
+            <li>
+              Network infrastructure is the broader collection of fundamental
+              components that work cohesively to run an IT network and is a
+              critical part of an organization's IT infrastructure.
+            </li>
+            <li>
+              Since an organization relies on its IT network to run
+              mission-critical applications and business operations, ensuring
+              the underlying network infrastructure is reliable, safe, robust,
+              and scalable is crucial.
+            </li>
+          </ul>
+          <a
+            class="ContentReference"
+            href="https://www.solarwinds.com/resources/it-glossary/network-infrastructure#"
+            >Read More</a
+          >
+        </div>
+
+        <img
+          class="ContentImg"
+          src="img/Infrastructure.JPG"
+          alt="InternetInfrastructure"
+        />
+      </div>
+
+      <div id="ContentTwo">
+        <div class="ContentWrite">
+          <h2 class="ContentTitle">Internet History</h2>
+
+          <ul class="ContentText">
+            <li>
+              The origins of the internet are rooted in the USA of the 1950s.
+              The Cold War was at its height and huge tensions existed between
+              North America and the Soviet Union. Both superpowers were in
+              possession of deadly nuclear weapons, and people lived in fear of
+              long-range surprise attacks. The US realised it needed a
+              communications system that could not be affected by a Soviet
+              nuclear attack.
+            </li>
+            <li>
+              At this time, computers were large, expensive machines exclusively
+              used by military scientists and university staff.
+            </li>
+          </ul>
+          <a
+            class="ContentReference"
+            href="https://www.scienceandmediamuseum.org.uk/objects-and-stories/short-history-internet"
+            >Read More</a
+          >
+        </div>
+
+        <img class="ContentImg" src="img/HISTORY.png" alt="InternetHistory" />
+      </div>
+    </div>
+
+    <section id="Quote">
+      <div id="QuoteContent">
+        <div id="QuoteText">
+          <h2>
+            <i
+              >"The Internet is becoming the town square for the global village
+              of tomorrow"</i
+            >
+          </h2>
+        </div>
+
+        <div id="WriterContainer">
+          <img id="WriterImage" src="img/BillGates.JPG" alt="Bill Gates" />
+
+          <div id="WriterDetails">
+            <div id="WriterName"><p>- Bill Gates</p></div>
+            <div id="WriterJob">
+              <p><i> (CO-FOUNDER of Microsoft)</i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Vid">
+      <div id="VidTitle">
+        <h2 id="TitleDesc">GENERAL VIDEO ABOUT THE INTERNET</h2>
+
+        <div id="VideoPlay">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Dxcc6ycZ73M?si=aNBrDUyCsAl0r0Wp"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script>
+    document
+      .querySelector(".btn-class-name")
+      .addEventListener("click", function () {
+        window.location.href = "IRArabic.html";
+      });
+  </script>
+</html>

@@ -1,0 +1,277 @@
+/*HAWDE LA KEL CHI*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  cursor: auto;
+}
+
+/*header*/
+
+nav {
+  height: 80px;
+  background: #073b4c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px 0px 50px;
+}
+
+#logo {
+  font-size: 40px;
+  font-weight: 800;
+  color: aliceblue;
+}
+
+#checkbox {
+  display: none;
+}
+
+.toggle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition-duration: 0.3s;
+}
+
+.bars {
+  display: none;
+  width: 100%;
+  height: 4px;
+  background-color: rgb(253, 255, 243);
+  border-radius: 5px;
+  transition-duration: 0.3s;
+}
+
+#checkbox:checked + .toggle #bar2 {
+  transform: translateY(14px) rotate(60deg);
+  margin-left: 0;
+  transform-origin: right;
+  transition-duration: 0.3s;
+  z-index: 2;
+}
+
+#checkbox:checked + .toggle #bar1 {
+  transform: translateY(28px) rotate(300deg);
+  transition-duration: 0.3s;
+  transform-origin: left;
+  z-index: 1;
+}
+
+#checkbox:checked + .toggle {
+  transform: rotate(90deg);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  bottom: 0;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  cursor: pointer;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 15px;
+  transition: all ease 0.2s;
+  border-radius: 5px;
+  padding: 15px 15px;
+}
+
+nav a:hover {
+  color: #073b4c;
+  background-color: aliceblue;
+}
+
+/*index*/
+
+.Hero {
+  background-image: url(img/Hero.jpg);
+  height: 550px;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+}
+.Hero h1 {
+  text-align: center;
+  line-height: 540px;
+  color: #073b4c;
+  border: 5px solid #073b4c;
+  font-size: 4em;
+}
+.AfterHero {
+  padding: 5% 0 0 1%;
+  font-size: 17px;
+  text-align: center;
+  color: #073b4c;
+}
+
+.item {
+  width: 15%;
+  border: 2px solid #073b4c;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #073b4c;
+  text-align: center;
+  transition: 0.3s;
+}
+
+#CV {
+  background: url(img/CVpic.jpeg);
+  background-size: cover;
+  background-position: center center;
+}
+#Research {
+  background: url(img/Internet.webp);
+  background-size: cover;
+  background-position: center center;
+}
+#MultiMedia {
+  background: url(img/Multimedia.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+#Schedule {
+  background: url(img/Schedulepic.jpeg);
+  background-size: cover;
+  background-position: center center;
+}
+#Quiz {
+  background: url(img/Quiz.png);
+  background-size: cover;
+  background-position: center center;
+}
+#Contact {
+  background: url(img/Contact.jpeg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.ItemTitle {
+  text-align: center;
+  color: aliceblue;
+  font-size: 25px;
+  background-color: #073b4c;
+  border: 2px solid #073b4c;
+  border-radius: 18px 18px 0px 0px;
+  transition: 0.1s;
+}
+
+.content-container {
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  gap: 1%;
+}
+
+.textcontent {
+  transition: 0.3s;
+  opacity: 0;
+  font-size: 18px;
+}
+
+.item:hover {
+  width: 100%;
+  .textcontent {
+    margin-top: 0;
+    opacity: initial;
+    color: aliceblue;
+    background-color: #073b4c;
+    border: solid #073b4c;
+    border-radius: 0px 0px 20px 20px;
+  }
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 1200px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 80px;
+    right: -200%;
+    background: #073b4c;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: ease 0.5s;
+  }
+  #checkbox:checked ~ ul {
+    height: 100%;
+    right: 0%;
+  }
+
+  nav li {
+    margin: 40px 0;
+  }
+
+  nav a {
+    font-size: 20px;
+    display: block;
+  }
+
+  .bars {
+    display: block;
+  }
+
+  #main-content.sidebar-open {
+    display: none;
+  }
+}
+
+@media all and (max-width: 900px) {
+  #logo {
+    font-size: 20px;
+  }
+  .Hero h1 {
+    font-size: 2em;
+  }
+
+  .content-container {
+    background-color: aliceblue;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    height: 200vh;
+    gap: 1%;
+    transition: 0.5s;
+  }
+
+  .item {
+    height: 30%;
+    width: 100%;
+    border: 2px solid #073b4c;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #073b4c;
+    text-align: center;
+    transition: 0.5s;
+  }
+
+  .item:hover {
+    height: 70%;
+    .textcontent {
+      opacity: initial;
+      color: aliceblue;
+      background-color: #073b4c;
+      border: solid #073b4c;
+      border-radius: 0px 0px 20px 20px;
+    }
+  }
+}
